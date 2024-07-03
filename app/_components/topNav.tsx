@@ -5,6 +5,7 @@ import { useState } from "react";
 import ExtendedNav from "./extendedNav";
 import NavLink from "./navLink";
 import RulesTools from './rulesTools';
+import ChapterList from "./chapterList";
 
 
 
@@ -38,6 +39,8 @@ export default function TopNav({ }: Readonly<{}>) {
         hoverDisplay={hoverDisplay}
         onHover={onHover}
         title={"Rules"}>
+        <ChapterList
+              onHover={onHover} />
         <RulesTools
               onHover={onHover} />
       </ExtendedNav>

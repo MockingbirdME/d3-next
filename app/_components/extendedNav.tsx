@@ -13,8 +13,6 @@ export default function ExtendedNav({title, hoverDisplay, onHover, children} : {
         // onMouseOut={() => onHover(null)}
     >
         <div className="flex justify-evenly">
-            {/* <ChapterList
-                onHover={onHover} /> */}
             {children}
             <h3>Something here</h3>
         </div>
